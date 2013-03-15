@@ -1,6 +1,7 @@
-When I was in Junior Hight School I love win32 asm so much,I was powerful,at that time I write some exercises.There is a CodeCount,it counts all lines include the code and annotation.
-The Core is :There was a new line by test the byte was '0A'.  
-I first write it at May 9,2010 when I was a greenhand,it cost me two days.
+When I was in Junior Hight School I love win32 asm so much,it was powerful.at that time I write some exercises.There is a CodeCount,it counts all lines include the code and annotation.
+The Core is :There was a new line by test the byte is '0A'.    
+I first write it at May 9,2010 when I was a greenhand,it cost me two days.Now I work with CPP language,write asm code seem to be a hard job,I spent 5 hours to understand the code and fixed some bug yesterday.  
+Miss those days that I fall in love with it.
 
 
 
@@ -15,7 +16,7 @@ how to use:
 2、select the path at the first edit.
 ![use example](./example.JPG)
 
-I use RadASM to write the code.
+I use RadASM to write the code.If you are a greenhand,you should not use it,or you will be a lazy man.
 
 
 
