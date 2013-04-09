@@ -153,11 +153,11 @@ _ProcessFile	proc	uses ebx edi esi _lpszFile
 				.if	al == 0ah ;不能使用0d0a做判断，因为unix下的文件是没有0d的
 					.if !@flag; 
 						inc	@count
-						mov	@flag,1;标志位，如果接下来还遇到0D，则表明是空行。剔除空行
+						mov	@flag,1;标志位，如果接下来还遇到0D，则表明是空行；如果接下来遇到00，则说明是unicode的文本。剔除空行
 					.else ;连续的0a
 					.endif
 				.else
-					.if	al != 0dh; 当有连续多个空行时，windows下是0d0a0d0a，必须做判断避免计算了空行 
+					.if	al != 0dh && al != 0; 当有连续多个空行时，windows下是0d0a0d0a，必须做判断避免计算了空行,unicode格式的文件空行是0d000a00（小端）或者000d000a(大端)，需要做处理  
 						mov	@flag,0
 					.endif
 				.endif	
