@@ -1,4 +1,4 @@
-This project release gtml DOC from txt file.   
+This project release html DOC from txt file.   
 Feel the power of plain text.
 
 
@@ -7,6 +7,7 @@ Feel the power of plain text.
 纯文本相关：《程序员修炼之道::纯文本的威力》
 
 
+使用config配置文件，设置输入文件夹路径和输出文件路径，涉及JSON解析。
 
 2013.4.30  
 cswuyg@gmail.com
