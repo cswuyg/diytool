@@ -58,7 +58,7 @@ namespace utility
 					delete [] buf;
 					break;
 				}
-				data = buf;
+				data = std::string(buf, nCount);
 				delete [] buf;
 
 				::CloseHandle(hFile);
